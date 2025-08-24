@@ -1,2 +1,16 @@
 strict digraph G {
-  
+  n1 [ label="ZhenHuan" shape="box" style="rounded" ];
+  n2 [ label="King GuoJun" shape="box" style="rounded" ];
+  n3 [ label="YongZheng" shape="box" style="rounded" ];
+  n4 [ label="ZhenHuan is together" shape="box" style="rounded" ];
+  n5 [ label="HuaFei is" shape="box" style="rounded" ];
+  n6 [ label="AnLingRong" shape="box" style="rounded" ];
+  n7 [ label="ShenMeiZhuang" shape="box" style="rounded" ];
+  n1 -> n2 [ label="love" color="#d81b60" penwidth="2" style="solid" arrowhead="normal" ];
+  n3 -> n1 [ label="love" color="#d81b60" penwidth="2" style="solid" arrowhead="normal" ];
+  n4 -> n3 [ label="couple" color="#8e24aa" penwidth="3" style="bold" arrowhead="normal" ];
+  n5 -> n1 [ label="rival" color="#3949ab" penwidth="2" style="dashed" arrowhead="normal" ];
+  n2 -> n3 [ label="rival" color="#3949ab" penwidth="2" style="dashed" arrowhead="normal" ];
+  n6 -> n1 [ label="betray" color="#e53935" penwidth="3" style="solid" arrowhead="vee" ];
+  n7 -> n1 [ label="support" color="#00897b" penwidth="2" style="dotted" arrowhead="normal" ];
+}

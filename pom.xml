@@ -31,13 +31,15 @@
 
     <build>
         <plugins>
-            <!-- 编译器插件：强制使用 Java 17 -->
+            <!-- 强制用 JDK 17 的 javac.exe 编译 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <release>${maven.compiler.release}</release>
+                    <fork>true</fork>
+                    <executable>C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot\bin\javac.exe</executable>
+                    <release>17</release>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
@@ -48,7 +50,6 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <!-- 按你的包名/类名改这里： -->
                     <mainClass>com.laura.Main</mainClass>
                 </configuration>
             </plugin>
