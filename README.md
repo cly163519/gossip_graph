@@ -1,4 +1,4 @@
-GossipGraph
+* GossipGraph
 
    Visualize character relationships and timelines from Chinese or English drama text.
 
@@ -9,7 +9,7 @@ GossipGraph
 
 * What It Does
 
-  Extracts relationships from natural-language text (Chinese or English) using regex/NLP rules
+   Extracts relationships from natural-language text (Chinese or English) using regex/NLP rules
 
    Builds a directed graph with edge styles for love, support, betray, etc.
 
@@ -19,13 +19,13 @@ GossipGraph
 
 * Development Notes
 
-Language: Java
+   Language: Java
 
-Libraries: JGraphT, Graphviz
+   Libraries: JGraphT, Graphviz
 
-Code generation: I designed the requirements and logic myself, and used AI coding assistance for some implementation details.
+   Code generation: I designed the requirements and logic myself, and used AI coding assistance for some implementation details.
 
 * Quick Start
-javac com/laura/Main.java
+   javac com/laura/Main.java
 java com.laura.Main graph --text="A loves B. B betrayed C." --out=graph.dot --png=graph.png
 java com.laura.Main timeline --file=events.txt
