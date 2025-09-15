@@ -1,21 +1,21 @@
 GossipGraph
 
-Visualize character relationships and timelines from Chinese or English drama text.
+   Visualize character relationships and timelines from Chinese or English drama text.
 
 * Idea
 
-This project started from my own interest in historical/romance dramas such as Empresses in the Palace (甄嬛传).
-I wanted a tool to read plain text and show who loves, supports, or betrays whom, and to create a simple timeline of events.
+   This project started from my own interest in historical/romance dramas such as Empresses in the Palace (甄嬛传).
+   I wanted a tool to read plain text and show who loves, supports, or betrays whom, and to create a simple timeline of events.
 
 * What It Does
 
-Extracts relationships from natural-language text (Chinese or English) using regex/NLP rules
+  Extracts relationships from natural-language text (Chinese or English) using regex/NLP rules
 
-Builds a directed graph with edge styles for love, support, betray, etc.
+   Builds a directed graph with edge styles for love, support, betray, etc.
 
-Exports Graphviz .dot and .png files
+   Exports Graphviz .dot and .png files
 
-Supports simple event timelines (YYYY-MM-DD description)
+   Supports simple event timelines (YYYY-MM-DD description)
 
 * Development Notes
 
